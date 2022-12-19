@@ -3,19 +3,19 @@ let counterValue = 0;
 
 const decrementButton = document.querySelector('[data-action="decrement"]');
 const incrementButton = document.querySelector('[data-action="increment"]');
-const valueElement = document.getElementById("#value");
+const valueElement = document.querySelector("#value");
 
 // Define increment and decrement functions
-function increment() {
-  counterValue += 1;
+const counterIncrement => {
+  counterValue ++;
   valueElement.textContent = counterValue;
 };
 
-function decrement() {
-  counterValue -= 1;
+const counterDecrement() {
+  counterValue --;
   valueElement.textContent = counterValue;
 };
 
 // Add click listeners to buttons
-decrementButton.addEventListener("click", decrement);
-incrementButton.addEventListener("click", increment);
+decrementButton.addEventListener("click", () => counterDecrement());
+incrementButton.addEventListener("click", () => counterIncrement());
