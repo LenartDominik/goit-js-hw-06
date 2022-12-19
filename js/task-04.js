@@ -6,12 +6,12 @@ const decrementButton = document.querySelector('[data-action="decrement"]');
 const incrementButton = document.querySelector('[data-action="increment"]');
 
 // Define increment and decrement functions
-const counterIncrement => {
+const counterIncrement = () => {
   counterValue ++;
   valueElement.textContent = counterValue;
 };
 
-const counterDecrement() {
+const counterDecrement = () => {
   counterValue --;
   valueElement.textContent = counterValue;
 };
