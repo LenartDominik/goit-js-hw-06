@@ -17,12 +17,10 @@ const images = [
 const galleryEl = document.querySelector(".gallery");
 
 // create a string of HTML for the images
-const galleryHTML = images.map(
-  (image) =>
-    `<li><img src="${image.url}" alt="${image.alt}"/></li>`
-).join("");
+const galleryHTML = images.map((image) =>
+    `<li><img src="${image.url}" alt="${image.alt}"/></li>`)
+  .join("");
 
 // add the gallery HTML to the DOM
 galleryEl.insertAdjacentHTML("beforeend", galleryHTML);
 
-galleryEl(images);
